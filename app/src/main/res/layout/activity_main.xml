@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warna3"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="ToDo List Apps"
+        android:background="@drawable/kotak1"
+        android:textSize="14pt"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/activity1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        android:background="@color/warna2"
+        android:text="Kegiatan 1"/>
+
+    <CheckBox
+        android:id="@+id/activity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        android:background="@color/warna4"
+        android:text="Kegiatan 2" />
+
+    <CheckBox
+        android:id="@+id/activity3"
+        android:layout_width="438dp"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        android:background="@color/warna2"
+        android:text="Kegiatan 3" />
+
+    <Button
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/warna4"
+        android:text="Tambah List" />
+
+    <Button
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/warna1"
+        android:text="Hapus List" />
+
+</LinearLayout>
