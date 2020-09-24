@@ -3,8 +3,8 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="warna1">#aaaaaa</color>
-    <color name="warna2">#ffe2e2</color>
-    <color name="warna3">#ffc7c7</color>
-    <color name="warna4">#f6f6f6</color>
+    <color name="abuAbu">#aaaaaa</color>
+    <color name="pinkMudaTrans">#ffe2e2</color>
+    <color name="pink">#ffc7c7</color>
+    <color name="pinkPutih">#f6f6f6</color>
 </resources>

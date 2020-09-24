@@ -3,61 +3,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/warna3"
+    android:background="@color/pink"
     android:orientation="vertical"
     android:padding="15dp">
 
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nameApp"
         android:layout_width="match_parent"
         android:layout_height="62dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="ToDo List Apps"
-        android:background="@drawable/kotak1"
+        android:background="@drawable/kotak_judul"
         android:textSize="14pt"
         android:textStyle="bold" />
 
-    <CheckBox
-        android:id="@+id/activity1"
+    <ListView
+        android:id="@+id/listAct"
+        android:background="@drawable/kotak_bg_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="50dp"
-        android:background="@color/warna2"
-        android:text="Kegiatan 1"/>
-
-    <CheckBox
-        android:id="@+id/activity2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="50dp"
-        android:background="@color/warna4"
-        android:text="Kegiatan 2" />
-
-    <CheckBox
-        android:id="@+id/activity3"
-        android:layout_width="438dp"
-        android:layout_height="wrap_content"
-        android:padding="50dp"
-        android:background="@color/warna2"
-        android:text="Kegiatan 3" />
+        android:layout_height="322dp" />
 
     <Button
+        android:id="@+id/tambahButton"
         android:layout_width="257dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="12dp"
-        android:background="@color/warna4"
-        android:text="Tambah List" />
+        android:background="@color/pinkPutih"
+        android:text="Add List" />
 
     <Button
+        android:id="@+id/editButton"
         android:layout_width="253dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="@color/warna1"
+        android:background="@color/pinkMudaTrans"
+        android:layout_marginBottom="12dp"
+        android:text="Edit List" />
+
+    <Button
+        android:id="@+id/hapusButton"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/abuAbu"
+        android:layout_marginBottom="12dp"
         android:text="Hapus List" />
 
 </LinearLayout>
