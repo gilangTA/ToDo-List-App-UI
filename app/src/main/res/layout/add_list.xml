@@ -20,6 +20,6 @@
         android:layout_marginTop="50dp"
         android:layout_gravity="center"
         android:background="@color/pinkMudaTrans"
-        android:text="add list" />
+        android:text="add list"/>
 
 </LinearLayout>
