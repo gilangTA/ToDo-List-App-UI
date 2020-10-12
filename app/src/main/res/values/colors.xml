@@ -3,8 +3,33 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="abuAbu">#aaaaaa</color>
-    <color name="pinkMudaTrans">#ffe2e2</color>
-    <color name="pink">#ffc7c7</color>
-    <color name="pinkPutih">#f6f6f6</color>
+
+
+    <!--My Color-->
+    <color name="myPrimary">#128C7E</color>
+    <color name="myPrimaryDark">#075e54</color>
+    <color name="myText">#41a290</color>
+    <color name="myTextLight">#FFFFFF</color>
+    <color name="myLightBackground">#a7e6d7</color>
+    <color name="myTransparent">#8c128C7E</color>
+    <color name="myLayoutColor">#EEEEEE</color>
+
+    <!--pallete one-->
+    <color name="pantoneDark331c">#017787</color>
+    <color name="pantoneOne">#01B0C8</color><!--3DAEBD-->
+    <color name="pantoneTwo">#30CBE1</color>
+    <color name="pantoneTree">#5BD4E5</color>
+    <color name="pantoneTransparent">#6605c3de</color>
+    <color name="pantoneDarkTransparent">#8c017787</color>
+    <color name="pantone331c">#05c3de</color>
+
+
+    <!--Gilang Color-->
+    <color name="color1">#ed6663</color>
+    <color name="color2">#b52b65</color>
+    <color name="color3">#3c2c3e</color>
+    <color name="color4">#59405c</color>
+    <color name="color5">#FFFFFF</color>
+    <color name="color6">#f7b1b0</color>
+
 </resources>
