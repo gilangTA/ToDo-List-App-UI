@@ -1,5 +1,6 @@
 package com.example.todolistui.modul.addList;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import androidx.annotation.Nullable;
 
 import com.example.todolistui.R;
 import com.example.todolistui.base.BaseFragment;
+import com.example.todolistui.modul.list.ListActivity;
 
 public class AddListFragment extends BaseFragment<AddListActivity, AddListContract.Presenter> implements AddListContract.View {
 
@@ -31,11 +33,11 @@ public class AddListFragment extends BaseFragment<AddListActivity, AddListContra
 
         etDate = fragmentView.findViewById(R.id.date_add_field);
         etList = fragmentView.findViewById(R.id.list_add_field);
-        btnAdd = fragmentView.findViewById(R.id.login_btn);
+        btnAdd = fragmentView.findViewById(R.id.btn_add_list);
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setBtLoginClick();
+                setBtAddClick();
             }
         });
 
@@ -43,7 +45,7 @@ public class AddListFragment extends BaseFragment<AddListActivity, AddListContra
         return fragmentView;
     }
 
-    public void setBtLoginClick(){
+    public void setBtAddClick(){
         String dateAdd = etDate.getText().toString();
         String listAdd = etList.getText().toString();
         mPresenter.performLogin(dateAdd,listAdd);
@@ -57,7 +59,11 @@ public class AddListFragment extends BaseFragment<AddListActivity, AddListContra
 
     @Override
     public void redirectToListActivity() {
-
+        Intent intent = new Intent(activity, ListActivity.class);
+        intent.putExtra("date",etDate.getText().toString());
+        intent.putExtra("list",etList.getText().toString());
+        startActivity(intent);
+        activity.finish();
     }
 }
 

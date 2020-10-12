@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/GilangTheme">
         <activity android:name=".modul.addList.AddListActivity"></activity>
+        <activity android:name=".modul.list.ListActivity"></activity>
         <activity android:name=".modul.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

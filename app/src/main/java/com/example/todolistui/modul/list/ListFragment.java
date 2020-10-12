@@ -63,5 +63,6 @@ public class ListFragment extends  BaseFragment<ListActivity, ListContract.Prese
     public void redirectToAddList(){
         Intent intent = new Intent(activity, AddListActivity.class);
         startActivity(intent);
+        activity.finish();
         }
     }
