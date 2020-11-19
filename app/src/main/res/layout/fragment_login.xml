@@ -1,9 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp">>
+    android:padding="15dp">
 
 
     <LinearLayout
@@ -52,10 +50,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:background="?attr/colorPrimary"
             android:textSize="10pt"
-            android:text="Login"
-            android:textColor="?attr/textWhiteColor" />
+            android:text="Login"/>
+<!--        android:background="?attr/colorPrimary"-->
+<!--        android:textColor="?attr/textWhiteColor"-->
 
     </LinearLayout>
 

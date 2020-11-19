@@ -9,13 +9,17 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.todolistui.R;
 import com.example.todolistui.base.BaseFragment;
+import com.example.todolistui.data.model.Task;
 import com.example.todolistui.modul.list.ListActivity;
+import com.example.todolistui.utils.RecyclerViewAdapter;
 
 public class AddListFragment extends BaseFragment<AddListActivity, AddListContract.Presenter> implements AddListContract.View {
 
+    RecyclerView mRecyclerView;
     EditText etDate;
     EditText etList;
     Button btnAdd;
@@ -48,21 +52,15 @@ public class AddListFragment extends BaseFragment<AddListActivity, AddListContra
     public void setBtAddClick(){
         String dateAdd = etDate.getText().toString();
         String listAdd = etList.getText().toString();
-        mPresenter.performLogin(dateAdd,listAdd);
+        mPresenter.saveData(dateAdd,listAdd);
     }
-
 
     @Override
-    public void setPresenter(AddListContract.Presenter presenter) {
-
-    }
+    public void setPresenter(AddListContract.Presenter presenter) { mPresenter = presenter;}
 
     @Override
     public void redirectToListActivity() {
-        Intent intent = new Intent(activity, ListActivity.class);
-        intent.putExtra("date",etDate.getText().toString());
-        intent.putExtra("list",etList.getText().toString());
-        startActivity(intent);
+
         activity.finish();
     }
 }

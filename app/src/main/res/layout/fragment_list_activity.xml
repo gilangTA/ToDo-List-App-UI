@@ -11,23 +11,21 @@
         android:id="@+id/nameApp"
         android:layout_width="match_parent"
         android:layout_height="62dp"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="ToDo List Apps"
         android:background="@drawable/kotak_judul"
-        android:textSize="14pt"
+        android:textSize="15pt"
         android:textStyle="bold" />
 
-    <ListView
-        android:id="@+id/listAct"
-        android:layout_width="wrap_content"
-        android:layout_height="272dp"
-        android:background="@drawable/kotak_bg_list" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewList"
+        android:layout_width="match_parent"
+        android:layout_height="393dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="315dp"
+        android:layout_height="245dp"
         android:orientation="vertical">
 
         <Button
@@ -37,26 +35,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="12dp"
-            android:background="@color/color5"
             android:text="Add List" />
 
-        <Button
-            android:id="@+id/editButton"
-            android:layout_width="253dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="12dp"
-            android:background="@color/color5"
-            android:text="Edit List" />
-
-        <Button
-            android:id="@+id/deleteButton"
-            android:layout_width="253dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="12dp"
-            android:background="@color/color6"
-            android:text="delete List" />
     </LinearLayout>
 
 </LinearLayout>

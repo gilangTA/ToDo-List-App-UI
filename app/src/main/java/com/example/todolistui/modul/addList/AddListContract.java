@@ -9,6 +9,6 @@ public interface AddListContract {
     }
 
     interface Presenter extends BasePresenter {
-        void performLogin(String dateAdd, String listAdd);
+        void saveData(String dateAdd, String listAdd);
     }
 }

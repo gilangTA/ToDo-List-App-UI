@@ -10,7 +10,7 @@ public class AddListPresenter implements AddListContract.Presenter {
     @Override
     public void start() { }
 
-    public void performLogin(final String email, final String password){
+    public void saveData(final String date, final String description){
         view.redirectToListActivity();
     }
 }

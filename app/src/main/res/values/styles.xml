@@ -40,7 +40,8 @@
         <item name="textDarkColor">@color/color6</item>
         <item name="textTabColor">@color/color6</item>
         <item name="textWhiteColor">@color/myTextLight</item>
-        <item name="detailBackground">@color/color5</item>
+        <item name="detailBackground">@color/color3</item>
+        <item name="buttonDefault">@color/color3</item>
         <item name="imageTransparentOverlay">@color/color4</item>
     </style>
 
